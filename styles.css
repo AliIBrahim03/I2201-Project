@@ -4,7 +4,7 @@ header {
     color: rgba(0, 0, 0, 0.518); /* White text */
     text-align: left; /* Center the text */
     width: 100%;
-    height: 90px;
+    height: 80px;
     box-sizing: border-box;
  }
  
@@ -101,12 +101,12 @@ body {
     display: flex;
     font-size: 20px;
     justify-content: space-around;
-    padding-top: 15px;   
+    padding-top: 22px;   
  }
 
  .navigation_bar a {
    text-decoration: none; 
-   color: white;  
+   color: rgba(255, 255, 255, 0.501);  
 }
 
 .book {
@@ -124,10 +124,10 @@ body {
 }
 
 .category {
-   background-color: rgb(0, 0, 0);
-   border: 1px solid #d36c1e;
-   border-radius: 8px;
-   padding: 20px;
+   background: linear-gradient(to top,#eb9e39,#FECD8C) 
+   border: 1px solid #ffffff00;
+   border-radius: 12px;
+   padding: 10px;
    text-align: center;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -135,7 +135,9 @@ body {
 .category h3 {
    font-size: 30px;
    margin-bottom: 10px;
-   color: #ffffff;
+   color: #0000005d;
+   padding-bottom: 15px;
+
 }
 
 .scroll-container {
@@ -151,12 +153,12 @@ body {
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-   background-color: #ffffff;
+   background-color: #0000005c;
    border-radius: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-track {
-   background-color: #000000;
+   background-color: #ffffff74;
    border-radius: 8px;
 }
 
@@ -178,9 +180,50 @@ body {
 
 .book .price {
    font-size: 14px;
-   color: #ff6347; /* Orange for price */
+   color: #000000; /* Orange for price */
 }
 
 .book .title {
-   color: #ffffff; /* Replace with your desired color */
+   color: #ffffffeb; /* Replace with your desired color */
+}
+
+.scroll-container-wrapper {
+   position: relative; /* Make the arrows position relative to the container */
+   display: flex;
+   align-items: center;
+}
+
+.arrow-button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: #001317;
+   color: #FECD8C;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   border-radius: 50%;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+}
+
+.arrow-button:hover {
+   background-color: #eb9e39;
+   color: #001317;
+}
+
+.arrow-left {
+   left: -30px;
+}
+
+.arrow-right {
+   right: -30px;
+}
+
+.scroll-container {
+   display: flex;
+   overflow-x: hidden; /* Hide overflow for custom scrolling */
+   gap: 20px;
+   padding: 10px 0;
+   scroll-behavior: smooth; /* Smooth scrolling effect */
 }
