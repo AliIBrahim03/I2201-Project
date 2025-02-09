@@ -253,3 +253,9 @@ body {
    border-radius: 20px; /* Optional: keep this for rounding corners */
    padding-bottom: 400px;
 }
+.blurred-load {
+   position: relative;
+   background-image: url(imageName-small.jpg); /* Placeholder image */
+   background-repeat: no-repeat;
+   background-size: cover;
+}
