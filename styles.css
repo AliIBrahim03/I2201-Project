@@ -106,12 +106,15 @@ body {
 
  .navigation_bar a {
    text-decoration: none; 
-   color: rgba(255, 255, 255, 0.501);  
+   color: rgba(255, 255, 255, 0.732);  
 }
 
 .book {
-   margin-top: 15px;
+   background-color: black; 
+   padding: 10px;
+   margin: auto;
    text-align: center;
+   border-radius: 20px;
 }
 
 .categories {
@@ -166,9 +169,11 @@ body {
    width: 150px;
    height: 200px;
    object-fit: cover; /* Ensures the image fits within its container */
-   border-radius: 8px;
+   border-radius: 10px;
    margin-bottom: 10px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+   display: block;
+   margin: auto;
 }
 
 .book .title {
@@ -180,7 +185,7 @@ body {
 
 .book .price {
    font-size: 14px;
-   color: #000000; /* Orange for price */
+   color: #ffffff; /* Orange for price */
 }
 
 .book .title {
@@ -226,4 +231,25 @@ body {
    gap: 20px;
    padding: 10px 0;
    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+#submit-button{
+   height: 50px;
+   width: 150px;
+   display: inline;
+   border-radius:50px;
+   padding: 10px; 
+   background-color: black; 
+   color: #FECD8C; 
+   border: none; 
+   cursor: pointer; 
+   font-size: 15px;
+   ;
+}
+
+.container .pyoi-image {
+   width: 700px; /* Set desired width */
+   height: 650px; /* Set desired height */
+   border-radius: 20px; /* Optional: keep this for rounding corners */
+   padding-bottom: 400px;
 }
