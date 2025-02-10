@@ -8,13 +8,59 @@
     <head>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <header>
-        My books
-    </header>
-    <main>
+    <body>
+        <header>
+            <nav class="navigation_bar">
+            
+                <b><a href="welcome.html">Home </a></b> &nbsp;
+                <b><a href="Browse.html">Browse</a></b> &nbsp;  
+                <b><a href="My Books.html">My Books  </a></b> &nbsp;
+                <b> <a href="PublishYourBook.html"> Publish </a></b> &nbsp;
+           
+                   </nav>
+        </header>
+    </body>
+    
+    <main id="my-books-list">
         
     </main>
     <body>
-
+        <script>
+            // Function to display books from localStorage
+            function displayBooks() {
+                const books = JSON.parse(localStorage.getItem('myBooks')) || [];
+                const booksList = document.getElementById('my-books-list');
+    
+                // Clear the existing list (in case the page was refreshed)
+                booksList.innerHTML = '';
+    
+                // Display each book in the list
+                books.forEach((book, index) => {
+                    const bookDiv = document.createElement('div');
+                    bookDiv.classList.add('book');
+    
+                    bookDiv.innerHTML = `
+                        <img src="${book.imageUrl}" alt="${book.title}" width="250" loading="lazy"/>
+                        <h2>${book.title}</h2>
+                        <p>${book.author}</p>
+                        <button class="remove-button" onclick="removeBook(${index})">Remove</button>
+                    `;
+    
+                    booksList.appendChild(bookDiv);
+                });
+            }
+            function removeBook(index) {
+                let books = JSON.parse(localStorage.getItem('myBooks')) || [];
+        // Remove the book at the specified index
+                books.splice(index, 1);
+        // Save the updated list back to localStorage
+                localStorage.setItem('myBooks', JSON.stringify(books));
+        // Refresh the display
+                 displayBooks();
+    }
+    
+            // Call the displayBooks function to load books when the page loads
+            window.onload = displayBooks;
+        </script>
     </body>
 </html>

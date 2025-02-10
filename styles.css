@@ -19,13 +19,14 @@ header {
  }
 
 .container {
-    display: flex; /
-    justify-content: center; /*horizontally*/
-    align-items: center;     /*vertically*/
-    padding: 30px;
-    max-width: 1000px; 
-    margin: 0 auto;
-    gap: 80px; 
+   border-radius: 50px;
+   display: flex; /
+   justify-content: center; /*horizontally*/
+   align-items: center;     /*vertically*/
+   padding: 30px;
+   max-width: 1000px; 
+   margin: 0 auto;
+   gap: 80px; 
 }
 
 .login-section  {
@@ -58,20 +59,21 @@ header {
  }
 
 body {
-    margin: 0;
-    font-family: Arial, serif;
-    background-color: #FECD8C;
+   margin: 0;
+   font-family: Arial, serif;
+   background-color: #FECD8C;
 }
 
 .container img {
-    flex: 2; /* Makes the image take more space compared to the login form */
-    width: 100%; 
-    max-width: 600px;
-    height: 100%; /* Maintain aspect ratio */
-    border-radius: 20px; 
-    object-fit: cover; /* Ensure the image looks good even if resized */
-    margin-left: -190px;
-    margin-top: 30px;
+   border-radius: 40px; 
+   flex: 0; /* Makes the image take more space compared to the login form */
+   padding-left: 100px;
+   width: 100%; 
+   max-width: 500px; 
+   height: 100%; /* Maintain aspect ratio */
+   object-fit: cover; /* Ensure the image looks good even if resized */
+   margin-left: -190px;
+    
 }
  
  form {
@@ -79,6 +81,28 @@ body {
     flex-direction: column; 
     gap: 35px; 
  }
+
+ .publish-form {
+   display: flex;
+   margin: 200px;
+   margin-left: 100px;
+   margin-top: -150px;
+   gap: 20px; /* Space between form elements */
+   max-width: 400px; /* Maximum width of the form */
+   width: 100%; /* Make the form take full width */
+   /* Center the form horizontally */
+   padding: 50px; /* Add padding around the form */
+   background-color: #000000; /* Background color of the form */
+   border-radius: 40px; /* Rounded corners */
+   box-shadow: 0 0 10000px rgb(255, 255, 255); /* Add a subtle shadow */
+}
+}
+
+.publish-form label {
+   font-size: 16px; /* Font size of the labels */
+   font-weight: bold; /* Make the labels bold */
+   margin-bottom: 5px; /* Space between label and input */
+}
 
  input {
     padding: 10px;
@@ -253,12 +277,37 @@ body {
    border-radius: 20px; /* Optional: keep this for rounding corners */
    padding-bottom: 400px;
 }
-<<<<<<< HEAD
 .blurred-load {
    position: relative;
    background-image: url(imageName-small.jpg); /* Placeholder image */
    background-repeat: no-repeat;
    background-size: cover;
 }
-=======
->>>>>>> 1296c8d02ff52edb298b9a3b31316e49938c6213
+.buy-button-container {
+   display: none; /* Hide the button container by default */
+   position: absolute; /* Position it relative to the book */
+   bottom: 10px; /* Adjust as needed */
+   left: 10px; /* Adjust as needed */
+}
+
+.book:hover .buy-button-container {
+   display: block; /* Show the button when hovering over the book */
+}
+
+.buy-button {
+   padding: 10px;
+   background-color: #ae1d1d;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.buy-button:hover {
+   background-color: #45a049;
+}
+#my-books-list {
+   color: whitesmoke;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* 4 books per row */
+   gap: 20px; /* Adjust the gap between books as needed */
+}
