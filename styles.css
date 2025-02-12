@@ -338,6 +338,7 @@ form {
 
 .buy-button:hover {
    background-color: #45a049; /* The color when hovering over the button */
+}
 
 #my-books-list {
    color: whitesmoke;
@@ -345,4 +346,3 @@ form {
    grid-template-columns: repeat(4, 1fr); /* 4 books per row */
    gap: 20px; /* Gap between each book */
  }
-
