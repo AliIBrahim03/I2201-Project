@@ -1,7 +1,6 @@
 header {
-    
     background: linear-gradient(to top,#FECD8C, #eb9e39);
-    color: rgba(0, 0, 0, 0.518); /* White text */
+    color: rgba(0, 0, 0, 0.518); 
     text-align: left; /* Center the text */
     width: 100%;
     height: 80px;
@@ -9,35 +8,59 @@ header {
  }
  
  header h1 {
+   
+    margin: auto;
     font-family: 'Rubik';
     font-style: oblique;
     font-size: 28px;
-    margin: 0; /* Remove default margin */
     font-family: 'Georgia', serif; /* Sleek font */
     padding-left: 120px;
-    padding-top: -20px;
+    padding-top: -30px;
+    
  }
 
-.container {
-   border-radius: 50px;
-   display: flex; /
-   justify-content: center; /*horizontally*/
-   align-items: center;     /*vertically*/
-   padding: 30px;
-   max-width: 1000px; 
+body {
+   margin: 0;
+   font-family: Arial, serif;
+   background-color: #FECD8C;
+ }
+ 
+.login-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 90px;
+   max-width: 1000px;
    margin: 0 auto;
-   gap: 80px; 
-}
+   gap: 200px;
+ }
 
-.login-section  {
+ .login-container img {
+   margin-top: -25px;
+   margin-left: -55px;
+   margin-right: 20px;
+   display: flex;
+   width: 550px;
+   border-radius: 10px;
+
+ }
+
+ .login-form {
+      width: 180px;
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      background-color: #000000;
+      border-radius: 40px;
+   }
+.login-section {
     flex: 1;
     width: 10%; 
     margin:0 auto;
     text-align: center;
     background-color: #001317;
     border-radius: 30px;
-    padding: 20px; /* Add padding inside the box */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    padding: 20px; 
 }
 
 .login-section h2 {
@@ -50,59 +73,104 @@ header {
     display: inline-block;
  }
 
- .login-section h2::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    margin: 5px auto; 
+.navigation_bar {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    padding-top: 22px;   
  }
 
-body {
-   margin: 0;
-   font-family: Arial, serif;
-   background-color: #FECD8C;
-}
+ .navigation_bar a {
+   text-decoration: none; 
+   color: rgba(255, 255, 255, 0.732);  
+ }
+
+.category {
+   background: linear-gradient(to top,#eb9e39,#FECD8C) 
+   border: 1px solid #ffffff00;
+   border-radius: 12px;
+   padding: 10px;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+.book {
+   background-color: black; 
+   padding: 10px;
+   margin: auto;
+   text-align: center;
+   border-radius: 20px;
+ }
+
+.container {
+   border-radius: 50px;
+   display: flex; /
+   justify-content: center; /*horizontally*/
+   align-items: center;     /*vertically*/
+   padding: 30px;
+   max-width: 1000px; 
+   margin: 0 auto;
+   gap: 80px; 
+ }
 
 .container img {
-   border-radius: 40px; 
+   border-radius: 70px; 
    flex: 0; /* Makes the image take more space compared to the login form */
    padding-left: 100px;
+   padding-top: 100px;
    width: 100%; 
    max-width: 500px; 
    height: 100%; /* Maintain aspect ratio */
    object-fit: cover; /* Ensure the image looks good even if resized */
-   margin-left: -190px;
-    
-}
+   margin-left: -190px;    
+ }
  
- form {
+form {
     display: flex;
     flex-direction: column; 
     gap: 35px; 
- }
+  }
 
  .publish-form {
-   display: flex;
-   margin: 200px;
-   margin-left: 100px;
-   margin-top: -150px;
-   gap: 20px; /* Space between form elements */
-   max-width: 400px; /* Maximum width of the form */
-   width: 100%; /* Make the form take full width */
-   /* Center the form horizontally */
-   padding: 50px; /* Add padding around the form */
-   background-color: #000000; /* Background color of the form */
-   border-radius: 40px; /* Rounded corners */
+   flex: 1;
+   margin-top: -75px;
+   gap: 15px; /* Space between form elements */
+   width: 310px;
+   height: 450px;
+   padding: 40px; /* Add padding around the form */
+   background-color: #000000; 
+   border-radius: 40px; 
    box-shadow: 0 0 10000px rgb(255, 255, 255); /* Add a subtle shadow */
-}
+ }
+ .publish-container {
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 150px;
+   max-width: 100px;
+   margin: 0 auto;
+   gap: 300px;
+ }
+
+.publish-container img {
+   flex: 1;
+   
+   margin-left: -100px;
+   margin-right: -100px;
+   margin-top: -100px;
+   width: 600px;
+   height: 600px;
+   border-radius: 40px;
 }
 
+
 .publish-form label {
+   color: white;
    font-size: 16px; /* Font size of the labels */
    font-weight: bold; /* Make the labels bold */
    margin-bottom: 5px; /* Space between label and input */
-}
+ }
 
  input {
     padding: 10px;
@@ -121,43 +189,14 @@ body {
     font-size: 15px;
  }
 
- .navigation_bar {
-    display: flex;
-    font-size: 20px;
-    justify-content: space-around;
-    padding-top: 22px;   
- }
-
- .navigation_bar a {
-   text-decoration: none; 
-   color: rgba(255, 255, 255, 0.732);  
-}
-
-.book {
-   background-color: black; 
-   padding: 10px;
-   margin: auto;
-   text-align: center;
-   border-radius: 20px;
-}
-
 .categories {
-   display: grid; /* Use CSS Grid for layout */
+   display: grid; 
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
    gap: 20px;
    padding: 20px;
    max-width: 1200px;
    margin: 0 auto;
-}
-
-.category {
-   background: linear-gradient(to top,#eb9e39,#FECD8C) 
-   border: 1px solid #ffffff00;
-   border-radius: 12px;
-   padding: 10px;
-   text-align: center;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+ }
 
 .category h3 {
    font-size: 30px;
@@ -165,7 +204,7 @@ body {
    color: #0000005d;
    padding-bottom: 15px;
 
-}
+ }
 
 .scroll-container {
    display: flex;
@@ -173,21 +212,32 @@ body {
    overflow-y: hidden;
    gap: 20px;
    padding: 10px 0;
-}
+   display: flex;
+   overflow-x: hidden; /* Hide overflow for custom scrolling */
+   gap: 20px;
+   padding: 10px 0;
+   scroll-behavior: smooth; /* Smooth scrolling effect */
+ }
 
 .scroll-container::-webkit-scrollbar {
    height: 8px;
-}
+ }
 
 .scroll-container::-webkit-scrollbar-thumb {
    background-color: #0000005c;
    border-radius: 8px;
-}
+ }
 
 .scroll-container::-webkit-scrollbar-track {
    background-color: #ffffff74;
    border-radius: 8px;
-}
+ }
+
+.scroll-container-wrapper {
+   position: relative; /* Make the arrows position relative to the container */
+   display: flex;
+   align-items: center;
+ }
 
 .book img {
    width: 150px;
@@ -198,29 +248,23 @@ body {
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
    display: block;
    margin: auto;
-}
+ }
 
 .book .title {
    font-size: 16px;
    font-weight: bold;
    margin: 5px 0;
    color: #333;
-}
+ }
 
 .book .price {
    font-size: 14px;
-   color: #ffffff; /* Orange for price */
-}
+   color: #ffffff; 
+ }
 
 .book .title {
-   color: #ffffffeb; /* Replace with your desired color */
-}
-
-.scroll-container-wrapper {
-   position: relative; /* Make the arrows position relative to the container */
-   display: flex;
-   align-items: center;
-}
+   color: #ffffffeb; 
+ }
 
 .arrow-button {
    position: absolute;
@@ -234,65 +278,55 @@ body {
    border-radius: 50%;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
    z-index: 1;
-}
+ }
 
 .arrow-button:hover {
    background-color: #eb9e39;
    color: #001317;
-}
+ }
 
 .arrow-left {
    left: -30px;
-}
+ }
 
 .arrow-right {
    right: -30px;
-}
-
-.scroll-container {
-   display: flex;
-   overflow-x: hidden; /* Hide overflow for custom scrolling */
-   gap: 20px;
-   padding: 10px 0;
-   scroll-behavior: smooth; /* Smooth scrolling effect */
-}
+ }
 
 #submit-button{
-   height: 50px;
-   width: 150px;
+   margin-left: 100px;
+   
+   margin-top: 10px;
+   height: 40px;
+   width: 90px;
    display: inline;
    border-radius:50px;
    padding: 10px; 
-   background-color: black; 
+   background-color: rgb(255, 0, 0); 
    color: #FECD8C; 
    border: none; 
    cursor: pointer; 
    font-size: 15px;
    ;
-}
+ }
 
 .container .pyoi-image {
-   width: 700px; /* Set desired width */
-   height: 650px; /* Set desired height */
-   border-radius: 20px; /* Optional: keep this for rounding corners */
+   width: 700px; 
+   height: 650px;
+   border-radius: 20px; 
    padding-bottom: 400px;
-}
-.blurred-load {
-   position: relative;
-   background-image: url(imageName-small.jpg); /* Placeholder image */
-   background-repeat: no-repeat;
-   background-size: cover;
-}
+ }
+
 .buy-button-container {
    display: none; /* Hide the button container by default */
-   position: absolute; /* Position it relative to the book */
-   bottom: 10px; /* Adjust as needed */
-   left: 10px; /* Adjust as needed */
-}
+   position: absolute; /* Position relative to the book */
+   bottom: 10px; 
+   left: 10px; 
+ }
 
 .book:hover .buy-button-container {
    display: block; /* Show the button when hovering over the book */
-}
+ }
 
 .buy-button {
    padding: 10px;
@@ -300,14 +334,15 @@ body {
    color: white;
    border: none;
    cursor: pointer;
-}
+ }
 
 .buy-button:hover {
-   background-color: #45a049;
-}
+   background-color: #45a049; /* The color when hovering over the button */
+
 #my-books-list {
    color: whitesmoke;
    display: grid;
    grid-template-columns: repeat(4, 1fr); /* 4 books per row */
-   gap: 20px; /* Adjust the gap between books as needed */
-}
+   gap: 20px; /* Gap between each book */
+ }
+

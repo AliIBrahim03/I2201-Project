@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- This tag ensures the web page is readable on mobile devices -->
+ <!-- This tag improves compatibility-->   
+<meta charset="UTF-8">
+<!-- This tag ensures the web page is readable on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Although it's considered good practice to include these tags in all HTML files in this instance it doesn't matter-->
+   
 <html>
     <title>Home</title>
     <head>
+        <!--Linking external CSS file-->
         <link rel="stylesheet" href="styles.css">
     </head>
     <header>
@@ -18,7 +22,7 @@
    
            </nav>
     </header>
-    <main class="main-content">
+    <main>
         <!-- New Releases Section -->
         <section class="category">
             <h3>New Releases</h3>
@@ -28,64 +32,58 @@
                 <div class="book">
                     <img src="images/Beautifully Ugly.jpeg" alt="Book 1" id="book1">
                     <p class="title">Beautifully Ugly</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Beautifully Ugly', 'images/Beautifully Ugly.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/beg borrow.jpeg" alt="Book 2">
                     <p class="title">Beg, Borrow, Or Steal: A Novel</p>
-                    <p class="price">$18.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/beg borrow.jpeg')">Buy</button>
-                </div>
-                <div class="book">
-                    <img src="images/brook shiwlds.jpeg" alt="Book 3">
-                    <p class="title">Brooke Shields Is Not Allowed to Get Old: Thoughts on Aging as a Woman</p>
-                    <p class="price">$20.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/brook shiwids.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Beg, Borrow, Or Steal: A Novel', 'images/beg borrow.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/The Crash.jpeg" alt="Book 1">
                     <p class="title">The Crash</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/The Crash.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('The Crash', 'images/The Crash.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Go higher.jpeg" alt="Book 1">
-                    <p class="title">Go higher</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Go higher.jpeg')">Buy</button>
+                    <p class="title">Go Higher</p>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Go Higher', 'images/Go higher.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Onyx Storm.jpeg" alt="Book 1">
                     <p class="title">Onyx Storm</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Onyx Storm.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Onyx Storm', 'images/Onyx Storm.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <div class = "blur-load">
                     <img src="images/Water moon a novel.jpeg" alt="Book 1">
                     </div>
                     <p class="title">Water Moon: A Novel</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Water moon a novel.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Water Moon: A Novel', 'images/Water moon a novel.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Out of The Woods.jpeg" alt="Book 1">
                     <p class="title">Out of The Woods</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Out of The Woods', 'images/Out of The Woods.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Better Than Friends.jpeg" alt="Book 1">
                     <p class="title">Better Than Friends</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Better Than Friends', 'images/Better Than Friends.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/You Deserve to Be Rich Master the Inner Game of Wealth and Claim Your Future.jpeg" alt="Book 1">
                     <p class="title">You Deserve to Be Rich Master the Inner Game of Wealth and Claim Your Future</p>
-                    <p class="price">$15.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('You Deserve to Be Rich Master the Inner Game of Wealth and Claim Your Future', 'images/You Deserve to Be Rich Master the Inner Game of Wealth and Claim Your Future.jpeg')">Buy</button>
                 </div>
             </div>
             <button class="arrow-button arrow-right">&gt;</button>
@@ -101,108 +99,107 @@
                 <div class="book">
                     <img src="images/A Clockwork Orange.jpeg" alt="Classic 1">
                     <p class="title">A Clockwork Orange</p>
-                    <p class="price">$12.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('A Clockwork Orange', 'images/A Clockwork Orange.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/A Portrait of the Artist as a Young Man.jpeg" alt="Classic 2">
                     <p class="title">A Portrait of the Artist as a Young Man</p>
-                    <p class="price">$14.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('A Portrait of the Artist as a Young Man', 'images/A Portrait of the Artist as a Young Man.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Animal Farm.jpg" alt="Classic 3">
                     <p class="title">Animal Farm</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Animal Farm', 'images/Animal Farm.jpg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Brave New World (New Longman Literature).jpeg" alt="Classic 3">
                     <p class="title">Brave New World (New Longman Literature)</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Brave New World (New Longman Literature)', 'images/Brave New World (New Longman Literature).jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Brideshead Revisited.jpeg" alt="Classic 3">
                     <p class="title">Brideshead Revisited</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Brideshead Revisited', 'images/Brideshead Revisited.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Catch-22.jpeg" alt="Classic 3">
                     <p class="title">Catch-22</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Catch-22', 'images/Catch-22.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Fahrenheit 451.jpeg" alt="Classic 3">
                     <p class="title">Fahrenheit 451</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Fahrenheit 451', 'images/Fahrenheit 451.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Lolita.jpeg" alt="Classic 3">
                     <p class="title">Lolita</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Lolita', 'images/Lolita.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Lord of the Flies.jpeg" alt="Classic 3">
                     <p class="title">Lord of the Flies</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Lord of the Flies', 'images/Lord of the Flies.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/Nineteen Eighty-Four.jpeg" alt="Classic 3">
                     <p class="title">Nineteen Eighty-Four</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Nineteen Eighty-Four', 'Author Name', 'images/Nineteen Eighty-Four.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('Nineteen Eighty-Four', 'images/Nineteen Eighty-Four.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/On the Road.jpeg" alt="Classic 3">
                     <p class="title">On the Road</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'On the Road', 'Author Name', 'images/On The Road.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('On the Road', 'images/On the Road.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/The Catcher in the Rye.jpeg" alt="Classic 3">
                     <p class="title">The Catcher in the Rye</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'The Catcher in the Rye', 'Author Name', 'images/The Catcher in the Rye.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('The Catcher in the Rye', 'images/The Catcher in the Rye.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/The Dose Effect.jpeg" alt="Classic 3">
                     <p class="title">The Dose Effect</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'The Dose Effect', 'Author Name', 'images/The Dose Effect.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('The Dose Effect', 'images/The Dose Effect.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/The Grapes of Wrath.jpeg" alt="Classic 3">
                     <p class="title">The Grapes of Wrath</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/The Grapes of Wrath.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('The Grapes of Wrath', 'images/The Grapes of Wrath.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/The Great Gatsby.jpeg" alt="Classic 3">
                     <p class="title">The Great Gatsby</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/The Great Gatsby.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('The Great Gatsby', 'images/The Great Gatsby.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/To Kill a Mockingbird.jpeg" alt="Classic 3">
                     <p class="title">To Kill a Mockingbird</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/To Kill a Mockingbird.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('To Kill a Mockingbird', 'images/To Kill a Mockingbird.jpeg')">Buy</button>
                 </div>
                 <div class="book">
                     <img src="images/To the Lighthouse.jpeg" alt="Classic 3">
                     <p class="title">To the Lighthouse</p>
-                    <p class="price">$10.99</p>
-                    <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/To the Lighthouse.jpeg')">Buy</button>
+                    <p class="price">$9.99</p>
+                    <button class="buy-button" onclick="buyBook('To the Lighthouse', 'images/To the Lighthouse.jpeg')">Buy</button>
+                    
                 </div>
                 <button class="arrow-button arrow-right">&gt;</button>
-            </div>
-
             </div>
         </section>
 
@@ -215,128 +212,108 @@
                     <div class="book">
                         <img src="images/A Game of Thrones.jpeg" alt="Rated 1">
                         <p class="title">A Game of Thrones</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('A Game of Thrones', 'images/A Game of Thrones.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Adventures of Huckleberry Finn.jpeg" alt="Rated 2">
                         <p class="title">Adventures of Huckleberry Finn</p>
-                        <p class="price">$16.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Adventures of Huckleberry Finn', 'images/Adventures of Huckleberry Finn.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Animal Farm.jpg" alt="Rated 3">
                         <p class="title">Animal Farm</p>
-                        <p class="price">$22.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Animal Farm', 'images/Animal Farm.jpg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Anna Karenina.jpeg" alt="Rated 1">
                         <p class="title">Anna Karenina</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Anna Karenina', 'images/Anna Karenina.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Crime and Punishment.jpeg" alt="Rated 1">
                         <p class="title">Crime and Punishment</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Crime and Punishment', 'images/Crime and Punishment.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Don Quixote.jpeg" alt="Rated 1">
                         <p class="title">Don Quixote</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Don Quixote', 'images/Don Quixote.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Frankenstein.jpeg" alt="Rated 1">
                         <p class="title">Frankenstein</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Frankenstein', 'images/Frankenstein.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Great Expectations.jpeg" alt="Rated 1">
                         <p class="title">Great Expectations</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Great Expectations', 'images/Great Expectations.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Harry Potter and the Order of the Phoenix.jpeg" alt="Rated 1">
                         <p class="title">Harry Potter and the Order of the Phoenix</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Harry Potter and the Order of the Phoenix', 'images/Harry Potter and the Order of the Phoenix.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Harry Potter and the Sorcerer's Stone.jpeg" alt="Rated 1">
                         <p class="title">Harry Potter and the Sorcerer's Stone</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Harry Potter and the Sorcerer\'s Stone', 'images/Harry Potter and the Sorcerer\'s Stone.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Jane Eyre.jpeg" alt="Rated 1">
                         <p class="title">Jane Eyre</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Jane Eyre', 'images/Jane Eyre.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/Pride and Prejudice.jpeg" alt="Rated 1">
                         <p class="title">Pride and Prejudice</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('Pride and Prejudice', 'images/Pride and Prejudice.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/The Hobbit.jpeg" alt="Rated 1">
                         <p class="title">The Hobbit</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook(, 'The Hobbit' 'images/The Hobbit.jpeg')">Buy</button>
                     </div>
                     <div class="book">
                         <img src="images/The Hunger Games.jpeg" alt="Rated 1">
                         <p class="title">The Hunger Games</p>
-                        <p class="price">$19.99</p>
-                        <button class="buy-button" onclick="buyBook('book1', 'Beautifully Ugly', 'Author Name', 'images/Beautifully Ugly.jpeg')">Buy</button>
+                        <p class="price">$9.99</p>
+                        <button class="buy-button" onclick="buyBook('The Hunger Games', 'images/The Hunger Games.jpeg')">Buy</button>
                     </div>
                 </div>
                 <button class="arrow-button arrow-right">&gt;</button>
             </div>
         </section>
     </main>
-    <script>
-        // Function to handle buying a book
-        function buyBook(bookId, title, author, imageUrl) {
-            // Create a book object
-            const book = {
-                id: bookId,
-                title: title,
-                author: author,
-                imageUrl: imageUrl
-            };
-    
-            // Get the existing list of bought books from localStorage
-            let books = JSON.parse(localStorage.getItem('myBooks')) || [];
-    
-            // Add the new book to the list
-            books.push(book);
-    
-            // Save the updated list back to localStorage
-            localStorage.setItem('myBooks', JSON.stringify(books));
-    
-            alert('Book added to My Books!');
-        }
-    </script>
+        </section>
+    </main>
+    <script src="home.js"></script>
     <script>
         document.querySelectorAll('.scroll-container-wrapper').forEach(wrapper => {
             const scrollContainer = wrapper.querySelector('.scroll-container');
             const leftArrow = wrapper.querySelector('.arrow-left');
             const rightArrow = wrapper.querySelector('.arrow-right');
-    
+
             leftArrow.addEventListener('click', () => {
                 scrollContainer.scrollBy({
                     left: -300, // Adjust the scroll amount
                     behavior: 'smooth'
                 });
             });
-    
+
             rightArrow.addEventListener('click', () => {
                 scrollContainer.scrollBy({
                     left: 300, // Adjust the scroll amount
